@@ -167,6 +167,7 @@ You should see your name and email listed.
 #### B. Fork the Course Repository
 
 1. The instructor will paste the repo link in Zoom chat
+  https://github.com/mhiskall282/novice-dev-with-ai
 2. Click it — it opens GitHub.com
 3. Click the **Fork** button (top right of the page)
 4. GitHub creates a copy under your account
@@ -177,8 +178,11 @@ You should see your name and email listed.
 In your VS Code terminal:
 
 ```bash
-git clone https://github.com/mhiskall282/novice-dev-with-ai.git
+git clone https://github.com/YOUR-GITHUB-USERNAME/novice-dev-with-ai.git
 ```
+
+> Replace `YOUR-GITHUB-USERNAME` with your actual GitHub username.
+> You are cloning **your fork**, not the instructor's repo.
 
 Wait for it to finish. Then:
 
@@ -203,9 +207,12 @@ git remote -v
 
 You should see:
 ```
-origin    https://github.com/mhiskall282/novice-dev-with-ai.git
-upstream  https://github.com/mhiskall282/novice-dev-with-ai.git
+origin    https://github.com/YOUR-USERNAME/novice-dev-with-ai.git   (your fork)
+upstream  https://github.com/mhiskall282/novice-dev-with-ai.git    (instructor)
 ```
+
+> **origin** = your personal copy (where you push your work)
+> **upstream** = the instructor's original (where you pull updates from)
 
 #### E. Create Your Personal Branch
 
@@ -285,6 +292,81 @@ Go to your GitHub fork in Chrome. Click **"student/your-name"** branch.
 You should see your files there.
 
 **Your code is on the internet. That is real software development.**
+
+## How to Submit Your Work
+
+### After Every Exercise — Commit and Push
+
+Every time you finish an exercise, save your work to GitHub:
+
+```bash
+git add .
+git commit -m "add: [describe what you built]"
+git push origin student/your-name
+```
+
+Verify it uploaded: go to `https://github.com/YOUR-USERNAME/novice-dev-with-ai`,
+switch to your `student/your-name` branch, and confirm your files are there.
+
+---
+
+### Submitting an Assignment — Open a Pull Request
+
+**All assignments are submitted as GitHub Pull Requests (PRs).**
+The instructor reviews your code on GitHub and leaves comments directly on your lines.
+
+> 📖 **Full step-by-step PR guide:** [`CONTRIBUTING.md`](./CONTRIBUTING.md)
+> Read this before opening your first PR.
+
+**Quick version:**
+
+```
+Step 1 → Commit and push your work (see above)
+
+Step 2 → Go to https://github.com/YOUR-USERNAME/novice-dev-with-ai
+
+Step 3 → Click "Compare & pull request" (yellow banner after pushing)
+
+Step 4 → Set the target:
+          Base:    mhiskall282/novice-dev-with-ai → main
+          Compare: YOUR-USERNAME/novice-dev-with-ai → student/your-name
+
+Step 5 → Write your PR title:
+          [Your Full Name] — Day [X] — [What You Built]
+          Example: "Amara Mensah — Day 3 — Semantic HTML + CSS"
+
+Step 6 → Fill in the description template from CONTRIBUTING.md
+          (What I built, what I learned, what was hard, self-checklist, questions)
+
+Step 7 → Click "Create Pull Request" ✅
+```
+
+### When the Instructor Leaves Feedback
+
+1. You get a GitHub email notification
+2. Read each comment on your PR
+3. Fix the issues in VS Code
+4. Commit and push — the same PR updates automatically:
+   ```bash
+   git add .
+   git commit -m "fix: [what you fixed based on review]"
+   git push origin student/your-name
+   ```
+5. Reply to each comment on GitHub and mark resolved
+6. Instructor re-reviews → approves → milestone confirmed ✅
+
+---
+
+### PR Title Format (Required)
+
+```
+[Full Name] — Day [X] — [Description]
+
+Examples:
+Kofi Boateng — Day 2 — HTML About Page
+Amara Mensah — Day 3 — Semantic HTML + CSS Introduction
+John Doe     — Day 4 — Final Personal Page
+```
 
 #### Day 1 Homework (Before Day 2)
 

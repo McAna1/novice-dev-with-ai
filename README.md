@@ -17,6 +17,7 @@
 | **Student — Day 1 setup** | [Environment Setup](#day-1-environment-setup) in the Student Guide |
 | **Student — returning** | [Your Daily 8-Step Workflow](#student-workflow--your-daily-8-steps) below |
 | **Student — stuck on code** | [How to Ask for Help](#how-to-ask-for-help) below |
+| **Student — submitting assignment** | 👉 [`CONTRIBUTING.md`](./CONTRIBUTING.md) — full PR submission guide |
 | **Instructor** | 👉 [`TEACHING-GUIDE.md`](./TEACHING-GUIDE.md) — full Zoom day-of-class playbook |
 
 > 📌 **Students:** Your main reference is [`STUDENT-GUIDE.md`](./STUDENT-GUIDE.md).
